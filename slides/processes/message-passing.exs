@@ -10,4 +10,4 @@ end
 
 child = `\cnode{spawn1}`spawn`\cnode{spawn2}`(&child_ai/0)
 `\cnode{drive1}`drive`\cnode{drive2}`()
-`\cnode{send1}`send`\cnode{send2}`(child_ai, :arrived)
+`\cnode{send1}`send`\cnode{send2}`(child, :arrived)
