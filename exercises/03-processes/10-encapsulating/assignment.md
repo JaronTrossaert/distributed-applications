@@ -38,7 +38,7 @@ end
 Write the necessary functions so that the above can be rewritten as
 
 ```elixir
-counter = Counter.create()
+counter = Counter.start()
 
 Counter.inc(counter)
 Counter.inc(counter)

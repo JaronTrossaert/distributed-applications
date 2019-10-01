@@ -13,8 +13,8 @@ defmodule Counter do
     end
   end
 
-  def create() do
-    spawn( &counter/0 )
+  def start() do
+    spawn(&counter/0)
   end
 
   def inc(counter_pid) do
@@ -38,7 +38,7 @@ defmodule Counter do
   end
 end
 
-counter = Counter.create()
+counter = Counter.start()
 Counter.inc(counter)
 Counter.inc(counter)
 Counter.inc(counter)
