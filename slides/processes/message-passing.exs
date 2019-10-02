@@ -1,5 +1,5 @@
 defp `\cnode{child1}`child_ai`\cnode{child2}`() do
-  IO.`\cnode{annoy1}`puts`\cnode{annoy2}`("Are were there yet?")
+  IO.`\cnode{annoy1}`puts`\cnode{annoy2}`("Are we there yet?")
 
   `\cnode{receive1}`receive`\cnode{receive2}` do
     `\cnode{msg1}`:arrived`\cnode{msg2}` -> IO.`\cnode{finally1}`puts`\cnode{finally2}`("Finally!")
