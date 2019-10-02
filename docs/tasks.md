@@ -161,7 +161,7 @@ defmodule FactorialAPI do
 end
 ```
 
-The `FactorialAPI` has one public entry point: the `calculate_list` function. We start a task for each number in the list, which are then collected by `Task.yield_many` with a timeout of 2 seconds. Every task in the list `tasks` will return a tuple consisting of `{%Task{}, response}` where the first element is the `Task` struct and the second the response. The response can be either `{:ok, result}` or `nil`, the latter
+The `FactorialAPI` has one public entry point: the `calculate_list` function. We start a task for each number in the list, which are then collected by `Task.yield_many` with a timeout of 2 seconds. Every task in the list `tasks` will return a tuple consisting of `{ %Task{}, response }` where the first element is the `Task` struct and the second the response. The response can be either `{:ok, result}` or `nil`, the latter
 being returned if the task has not completed within the given time limit.
 
 Sample usage of this module would be:
