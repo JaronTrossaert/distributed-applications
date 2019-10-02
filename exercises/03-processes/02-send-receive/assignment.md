@@ -7,14 +7,14 @@ would be doomed to remain isolated in separate "universes."
 
 Communication between processes is done through message passing.
 Each process has its own *process id*, often abbreviated as pid.
-The pid of a newly spawned processes is returned by `spawn`:
+The pid of a newly spawned process is returned by `spawn`:
 
 ```elixir
 pid = spawn(&func/0)
 ```
 
 A process can send an arbitrary message (a string, a number, a tuple, ...)
-to another processes as follows:
+to another process as follows:
 
 ```elixir
 send(pid, message)
