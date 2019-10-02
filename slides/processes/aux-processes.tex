@@ -200,7 +200,7 @@
             \codeoverlinex{rec}
             \node[note2,anchor=south] (note) at ($ (rec) + (0,0.75) $) {
                 \parbox{5cm}{
-                    No \texttt{:arrive} message yet. Function calls itself.
+                    No \texttt{:arrived} message yet. Function calls itself.
                 }
             };
             \draw[note arrow] (note) -- (rec);
@@ -242,7 +242,7 @@
         }
         \only<12>{
             \codeunderlinex{msg}
-            \node[note2,anchor=north west] (note) at ($ (msg) + (0,-0.75) $) {It finds an \texttt{:arrive} message!};
+            \node[note2,anchor=north west] (note) at ($ (msg) + (0,-0.75) $) {It finds an \texttt{:arrived} message!};
             \draw[note arrow] (note) -- (msg);
         }
         \only<13>{
